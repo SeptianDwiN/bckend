@@ -26,7 +26,8 @@ const postParam = (req) => {
         data = {
             username: req.body.username.trim(),
             email: req.body.email,
-            password: passwordToSave
+            password: passwordToSave,
+            role: req.body.role,
         };
     return data;
 }

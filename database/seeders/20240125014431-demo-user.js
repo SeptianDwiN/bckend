@@ -8,6 +8,15 @@ module.exports = {
         username: `user${i}`,
         email: `user${i}@gmail.com`,
         password: passwordHash.generate(`user${i}`),
+        role:`admin`,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      });
+      users.push({
+        username: `user`,
+        email: `user@gmail.com`,
+        password: passwordHash.generate(`12345`),
+        role:`user`,
         createdAt: new Date(),
         updatedAt: new Date()
       });

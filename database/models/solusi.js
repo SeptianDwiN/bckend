@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Solusi.hasMany(models.Kuis,{foreignKey:'solusi_id'});
     }
   }
   Solusi.init({
